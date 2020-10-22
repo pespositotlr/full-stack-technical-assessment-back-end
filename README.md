@@ -3,6 +3,8 @@ An example back end project written in .NET Core
 
 This was originally a coding test to give an example of building a full-stack project from scratch. It's using an XML file as its data store and React Redux as its front end (This is stored in a separate repository).
 
+The front end project repo can be found here: https://github.com/pespositotlr/full-stack-technical-assessment-front-end/
+
 ## Original assignment instructions (Specific information about the company has been removed): 
 ```
 Full-Stack Technical Assessment: Create and deploy a simple, responsive single-page .NET web app
