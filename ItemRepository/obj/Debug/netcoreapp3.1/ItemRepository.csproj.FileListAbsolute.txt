@@ -8,3 +8,4 @@ C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Debu
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Debug\netcoreapp3.1\ItemRepository.AssemblyInfo.cs
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Debug\netcoreapp3.1\ItemRepository.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Debug\netcoreapp3.1\ItemRepository.pdb
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Debug\netcoreapp3.1\ItemRepository.csprojAssemblyReference.cache

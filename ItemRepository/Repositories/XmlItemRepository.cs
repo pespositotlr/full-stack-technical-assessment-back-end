@@ -25,7 +25,6 @@ namespace ItemRepository.Repositories
         {
             _config = config;
             _itemFactory = new ItemFactory(_config);
-            _items = GetItemsFromDataStore();
         }
 
         public IEnumerable<IItem> GetItems()
