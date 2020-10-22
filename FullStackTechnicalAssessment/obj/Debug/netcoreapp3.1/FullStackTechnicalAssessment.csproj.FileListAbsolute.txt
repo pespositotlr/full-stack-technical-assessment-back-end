@@ -8,6 +8,8 @@ C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAsses
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\FullStackTechnicalAssessment.runtimeconfig.dev.json
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\FullStackTechnicalAssessment.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\FullStackTechnicalAssessment.pdb
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\ItemRepository.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\ItemRepository.pdb
@@ -21,5 +23,3 @@ C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAsses
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Debug\netcoreapp3.1\FullStackTechnicalAssessment.csproj.CopyComplete
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Debug\netcoreapp3.1\FullStackTechnicalAssessment.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Debug\netcoreapp3.1\FullStackTechnicalAssessment.pdb
-C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

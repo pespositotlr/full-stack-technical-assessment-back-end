@@ -30,19 +30,23 @@ namespace ItemRepository.Repositories
 
         public IEnumerable<IItem> GetItems()
         {
+            _items = GetItemsFromDataStore();
             return _items;
         }
         public IEnumerable<IItem> GetItemsByItemName(string itemName)
         {
+            _items = GetItemsFromDataStore();
             return _items.Where(x => x.ItemName == itemName);
         }
         public IItem GetItemById(int id)
         {
+            _items = GetItemsFromDataStore();
             return _items.FirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<IItem> GetMaxPricedItems()
         {
+            _items = GetItemsFromDataStore();
             return _items.GroupBy(x => x.ItemName, (key, g) => g.OrderByDescending(e => e.Cost).FirstOrDefault());
         }
         
@@ -62,6 +66,7 @@ namespace ItemRepository.Repositories
 
         private int getNewItemId()
         {
+            _items = GetItemsFromDataStore();
             return _items.Max(x => x.Id) + 1;
         }
 

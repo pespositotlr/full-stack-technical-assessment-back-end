@@ -6,3 +6,6 @@ C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Rele
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.AssemblyInfo.cs
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.pdb
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.csprojAssemblyReference.cache

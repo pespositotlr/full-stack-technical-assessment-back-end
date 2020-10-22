@@ -21,3 +21,5 @@ C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAsses
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Release\netcoreapp3.1\FullStackTechnicalAssessment.csproj.CopyComplete
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Release\netcoreapp3.1\FullStackTechnicalAssessment.dll
 C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\obj\Release\netcoreapp3.1\FullStackTechnicalAssessment.pdb
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\FullStackTechnicalAssessment\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

@@ -2,8 +2,13 @@
 <root>
   <item>
     <id>1</id>
-    <cost>9902</cost>
+    <cost>100</cost>
     <item_name>ITEM 1</item_name>
+  </item>
+  <item>
+    <id>2</id>
+    <cost>200</cost>
+    <item_name>ITEM 2</item_name>
   </item>
   <item>
     <id>3</id>
@@ -26,18 +31,8 @@
     <item_name>ITEM 4</item_name>
   </item>
   <item>
-    <id>8</id>
-    <cost>999999</cost>
-    <item_name>ABAAAA</item_name>
-  </item>
-  <item>
-    <id>9</id>
-    <cost>999998</cost>
+    <id>7</id>
+    <cost>200</cost>
     <item_name>ITEM 2</item_name>
-  </item>
-  <item>
-    <id>10</id>
-    <cost>2</cost>
-    <item_name>Test Item 2</item_name>
   </item>
 </root>

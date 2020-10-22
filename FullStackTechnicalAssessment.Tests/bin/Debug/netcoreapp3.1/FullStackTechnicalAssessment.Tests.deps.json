@@ -2065,6 +2065,9 @@
         }
       },
       "ItemRepository/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.9"
+        },
         "runtime": {
           "ItemRepository.dll": {}
         },
