@@ -1,0 +1,8 @@
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\DataStores\ItemsDataStore.xml
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\ItemRepository.deps.json
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\ItemRepository.dll
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\bin\Release\netcoreapp3.1\ItemRepository.pdb
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.AssemblyInfoInputs.cache
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.AssemblyInfo.cs
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.dll
+C:\Users\kewl0\source\repos\FullStackTechnicalAssessment\ItemRepository\obj\Release\netcoreapp3.1\ItemRepository.pdb
