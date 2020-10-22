@@ -164,7 +164,7 @@ namespace FullStackTechnicalAssessment.Tests
 
             //Delete that item
             var stringContentDelete = new StringContent(JsonConvert.SerializeObject(item.Id), Encoding.UTF8, "application/json");
-            var deleteResult = await client.PutAsync("/api/DeleteItem", stringContentDelete);
+            var deleteResult = await client.DeleteAsync("/api/DeleteItem/" + stringContentDelete);
             Assert.AreEqual(System.Net.HttpStatusCode.OK, deleteResult.StatusCode);
 
             //See that item has been deleted

@@ -162,17 +162,17 @@ namespace FullStackTechnicalAssessment.Controllers
         /// Allows the user to delete data in the data store
         /// </summary>
         /// <returns></returns>
-        [HttpPut]
-        [Route("DeleteItem")]
+        [HttpDelete]
+        [Route("DeleteItem/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<IItem> DeleteItem([FromBody]int itemId)
+        public ActionResult<IItem> DeleteItem(int id)
         {
-            var originalItem = _itemRepository.GetItemById(itemId);
+            var originalItem = _itemRepository.GetItemById(id);
 
             if (originalItem != null)
             {
-                _itemRepository.DeleteItem(itemId);
+                _itemRepository.DeleteItem(id);
                 return Ok();
             }
 
