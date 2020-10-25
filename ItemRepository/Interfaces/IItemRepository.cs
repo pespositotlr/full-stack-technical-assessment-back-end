@@ -11,7 +11,7 @@ namespace ItemRepository.Interfaces
         IEnumerable<IItem> GetItemsByItemName(string itemName);
         IItem GetItemById(int id);
         IEnumerable<IItem> GetMaxPricedItems();
-        void CreateItem(IItem item);
+        int CreateItem(IItem item);
         void UpdateItem(IItem item);
         void DeleteItem(int itemId);
     }

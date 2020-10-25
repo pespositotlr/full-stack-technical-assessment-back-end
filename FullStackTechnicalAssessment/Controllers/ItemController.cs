@@ -115,7 +115,7 @@ namespace FullStackTechnicalAssessment.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("CreateItem")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<IItem> CreateItem([FromBody]ItemCreateRequest item)
         {
@@ -127,9 +127,9 @@ namespace FullStackTechnicalAssessment.Controllers
             newItem.ItemName = item.ItemName;
             newItem.Cost = item.Cost;
 
-            _itemRepository.CreateItem(newItem);
+            var newId = _itemRepository.CreateItem(newItem);
 
-            return Ok();
+            return CreatedAtAction(nameof(CreateItem), new { id = newId }, newItem);
         }
 
         /// <summary>
@@ -165,7 +165,7 @@ namespace FullStackTechnicalAssessment.Controllers
         [HttpDelete]
         [Route("DeleteItem/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IItem> DeleteItem(int id)
         {
             var originalItem = _itemRepository.GetItemById(id);
@@ -176,7 +176,7 @@ namespace FullStackTechnicalAssessment.Controllers
                 return Ok();
             }
 
-            return BadRequest();
+            return NotFound();
         }
     }
 }

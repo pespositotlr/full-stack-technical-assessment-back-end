@@ -35,4 +35,9 @@
     <cost>200</cost>
     <item_name>ITEM 2</item_name>
   </item>
+  <item>
+    <id>8</id>
+    <cost>999</cost>
+    <item_name>ITEM 999</item_name>
+  </item>
 </root>

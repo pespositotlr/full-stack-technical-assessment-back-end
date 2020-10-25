@@ -30,9 +30,4 @@
     <cost>40</cost>
     <item_name>ITEM 4</item_name>
   </item>
-  <item>
-    <id>7</id>
-    <cost>200</cost>
-    <item_name>ITEM 2</item_name>
-  </item>
 </root>

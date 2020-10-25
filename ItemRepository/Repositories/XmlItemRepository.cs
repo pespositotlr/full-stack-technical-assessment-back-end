@@ -49,18 +49,22 @@ namespace ItemRepository.Repositories
             return _items.GroupBy(x => x.ItemName, (key, g) => g.OrderByDescending(e => e.Cost).FirstOrDefault());
         }
         
-        public void CreateItem(IItem item)
+        public int CreateItem(IItem item)
         {                        
             XDocument doc = XDocument.Load(itemDataStorePath);
             XElement itemElement = new XElement("item");
 
-            itemElement.Add(new XElement("id", getNewItemId()));
+            int newId = getNewItemId();
+
+            itemElement.Add(new XElement("id", newId));
             itemElement.Add(new XElement("cost", item.Cost));
             itemElement.Add(new XElement("item_name", item.ItemName));
 
             doc.Element("root").Add(itemElement);
 
             doc.Save(itemDataStorePath);
+
+            return newId;
         }
 
         private int getNewItemId()

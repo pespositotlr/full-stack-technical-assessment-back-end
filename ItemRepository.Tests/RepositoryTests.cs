@@ -107,7 +107,9 @@ namespace ItemRepository.Tests
             itemToAdd.ItemName = "ITEM 555";
             itemToAdd.Cost = 555;
 
-            _itemRepository.CreateItem(itemToAdd);
+            var newId = _itemRepository.CreateItem(itemToAdd);
+
+            Assert.IsTrue(newId > 0);
 
             var items = _itemRepository.GetItems();
 

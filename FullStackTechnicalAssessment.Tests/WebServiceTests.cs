@@ -73,13 +73,12 @@ namespace FullStackTechnicalAssessment.Tests
             client.DefaultRequestHeaders.Accept.Clear();
 
             ItemViewModel item = new ItemViewModel();
-            item.Id = 999;
             item.Cost = 555;
             item.ItemName = "Unit Test Item";
 
             var stringContent = new StringContent(JsonConvert.SerializeObject(item), Encoding.UTF8, "application/json");
             var createResult = await client.PostAsync("/api/CreateItem", stringContent);
-            Assert.AreEqual(System.Net.HttpStatusCode.OK, createResult.StatusCode);
+            Assert.AreEqual(System.Net.HttpStatusCode.Created, createResult.StatusCode);
             
             var getResult = await client.GetAsync("/api/GetItems");
             Assert.AreEqual(System.Net.HttpStatusCode.OK, getResult.StatusCode);
@@ -87,7 +86,7 @@ namespace FullStackTechnicalAssessment.Tests
             var data = await content.ReadAsStringAsync();
 
             var items = (List<ConcreteItem>)JsonConvert.DeserializeObject(data, typeof(List<ConcreteItem>));
-            Assert.IsTrue(items.Any(x => x.Id == item.Id && x.Cost == item.Cost && x.ItemName == item.ItemName));
+            Assert.IsTrue(items.Any(x => x.Cost == item.Cost && x.ItemName == item.ItemName));
         }
 
         [TestMethod]
@@ -151,7 +150,7 @@ namespace FullStackTechnicalAssessment.Tests
             //Create an item
             var stringContentCreate = new StringContent(JsonConvert.SerializeObject(item), Encoding.UTF8, "application/json");
             var createResult = await client.PostAsync("/api/CreateItem", stringContentCreate);
-            Assert.AreEqual(System.Net.HttpStatusCode.OK, createResult.StatusCode);
+            Assert.AreEqual(System.Net.HttpStatusCode.Created, createResult.StatusCode);
 
             //Check that item has been created
             var getResult1 = await client.GetAsync("/api/GetItems");
@@ -160,11 +159,11 @@ namespace FullStackTechnicalAssessment.Tests
             var data1 = await content1.ReadAsStringAsync();
 
             var items1 = (List<ConcreteItem>)JsonConvert.DeserializeObject(data1, typeof(List<ConcreteItem>));
-            Assert.IsNotNull(items1.Any(x => x.Id == item.Id && x.Cost == item.Cost && x.ItemName == item.ItemName));
+            var createdItem = items1.FirstOrDefault(x => x.Cost == item.Cost && x.ItemName == item.ItemName);
+            Assert.IsNotNull(createdItem);
 
             //Delete that item
-            var stringContentDelete = new StringContent(JsonConvert.SerializeObject(item.Id), Encoding.UTF8, "application/json");
-            var deleteResult = await client.DeleteAsync("/api/DeleteItem/" + stringContentDelete);
+            var deleteResult = await client.DeleteAsync("/api/DeleteItem/" + createdItem.Id);
             Assert.AreEqual(System.Net.HttpStatusCode.OK, deleteResult.StatusCode);
 
             //See that item has been deleted
@@ -174,7 +173,7 @@ namespace FullStackTechnicalAssessment.Tests
             var data2 = await content2.ReadAsStringAsync();
 
             var items2 = (List<ConcreteItem>)JsonConvert.DeserializeObject(data2, typeof(List<ConcreteItem>));
-            Assert.IsFalse(items2.Any(x => x.Id == item.Id && x.Cost == item.Cost && x.ItemName == item.ItemName));
+            Assert.IsFalse(items2.Any(x => x.Id == createdItem.Id));
 
         }
 
@@ -187,7 +186,7 @@ namespace FullStackTechnicalAssessment.Tests
             //Delete that item
             var stringContentDelete = new StringContent(JsonConvert.SerializeObject(1111111), Encoding.UTF8, "application/json");
             var deleteResult = await client.PutAsync("/api/DeleteItem", stringContentDelete);
-            Assert.AreEqual(System.Net.HttpStatusCode.BadRequest, deleteResult.StatusCode);
+            Assert.AreEqual(System.Net.HttpStatusCode.NotFound, deleteResult.StatusCode);
 
         }
     }
