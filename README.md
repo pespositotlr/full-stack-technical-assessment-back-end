@@ -5,6 +5,8 @@ This was originally a coding test to give an example of building a full-stack pr
 
 The front end project repo can be found here: https://github.com/pespositotlr/full-stack-technical-assessment-front-end/
 
+There's a current version of this app being run on Azure here: https://fullstacktechnicalassessment20201022103109.azurewebsites.net/
+
 ## Original assignment instructions (Specific information about the company has been removed): 
 ```
 Full-Stack Technical Assessment: Create and deploy a simple, responsive single-page .NET web app
